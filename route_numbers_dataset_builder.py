@@ -43,7 +43,7 @@ class Builder(tfds.core.GeneratorBasedBuilder):
   def _split_generators(self, dl_manager: tfds.download.DownloadManager):
     """Returns SplitGenerators."""
     # TODO(numbers_dataset): Downloads the data and defines the splits
-    path = dl_manager.extract('dataset-numbers-split.zip')
+    path = dl_manager.extract('/content/dataset-numbers-split.zip')
 
     # TODO(numbers_dataset): Returns the Dict[split names, Iterator[Key, Example]]
     return {
